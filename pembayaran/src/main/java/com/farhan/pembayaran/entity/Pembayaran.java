@@ -103,6 +103,10 @@ public class Pembayaran {
     public String toString() {
         return "Pembayaran{" + "id=" + id + ", order_Id=" + order_Id + ", mode_pemabayaran=" + mode_pemabayaran + ", ref_number=" + ref_number + ", tgl_pembayaran=" + tgl_pembayaran + ", status=" + status + ", total=" + total + '}';
     }
+
+    public void setMode_pembayaran(String mode_pembayaran) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }
     
