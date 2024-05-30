@@ -39,6 +39,15 @@ public class OrderController {
         return orderService.getOrderWithProdukById(id);
     }
     
+    @PostMapping public void insertOrder(@RequestBody Order order){
+        orderService.insert(order);
+    }
+    
+    @DeleteMapping(path = "{id}")
+    public void deleteOrder(@PathVariable("id")Long id){
+        orderService.deleteorder(id);
+    }
+    
     @PutMapping(path = "{id}")
     public void updateOrder(@PathVariable ("id") Long id,
             @RequestParam(required = false) int jumlah,
